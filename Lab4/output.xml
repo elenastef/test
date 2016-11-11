@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150927 15:10:02.160" generator="Robot 2.8.6 (Python 2.7.6 on linux2)">
+<suite source="/home/btucker/Lab4/lab4.rst" id="s1" name="Lab4">
+<test id="s1-t1" name="Valid Highway Prefix IH and Valid Number 1234">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Valid Prefix Valid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.221" level="INFO">Set tag 'Valid Prefix Valid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.221" starttime="20150927 15:10:02.220"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>IH1234</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.221" level="INFO">${result} = True</msg>
+<status status="PASS" endtime="20150927 15:10:02.221" starttime="20150927 15:10:02.221"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.222" starttime="20150927 15:10:02.222"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Valid Prefix Valid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.222" critical="yes" starttime="20150927 15:10:02.219"></status>
+</test>
+<test id="s1-t2" name="Invalid Highway Prefix Lowercase ih and Valid Number 1234">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Invalid Prefix Valid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.224" level="INFO">Set tag 'Invalid Prefix Valid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.224" starttime="20150927 15:10:02.223"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>ih1234</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.225" level="INFO">${result} = False</msg>
+<status status="PASS" endtime="20150927 15:10:02.224" starttime="20150927 15:10:02.224"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Not Be True">
+<doc>Fails if the given condition is true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.225" starttime="20150927 15:10:02.225"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Invalid Prefix Valid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.225" critical="yes" starttime="20150927 15:10:02.223"></status>
+</test>
+<test id="s1-t3" name="Valid Highway Prefix IH and Invalid Number 12345">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Valid Prefix Invalid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.227" level="INFO">Set tag 'Valid Prefix Invalid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.227" starttime="20150927 15:10:02.227"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>IH12345</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.228" level="INFO">${result} = False</msg>
+<status status="PASS" endtime="20150927 15:10:02.228" starttime="20150927 15:10:02.227"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Not Be True">
+<doc>Fails if the given condition is true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.228" starttime="20150927 15:10:02.228"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Valid Prefix Invalid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.229" critical="yes" starttime="20150927 15:10:02.226"></status>
+</test>
+<test id="s1-t4" name="Valid Highway Prefix IH and Valid Number 12">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Valid Prefix Valid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.230" level="INFO">Set tag 'Valid Prefix Valid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.230" starttime="20150927 15:10:02.230"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>IH12</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.231" level="INFO">${result} = True</msg>
+<status status="PASS" endtime="20150927 15:10:02.231" starttime="20150927 15:10:02.231"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.232" starttime="20150927 15:10:02.231"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Valid Prefix Valid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.232" critical="yes" starttime="20150927 15:10:02.229"></status>
+</test>
+<test id="s1-t5" name="Valid Highway Prefix IH and Invalid Number 1">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Valid Prefix Invalid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.233" level="INFO">Set tag 'Valid Prefix Invalid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.233" starttime="20150927 15:10:02.233"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>IH1</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.234" level="INFO">${result} = False</msg>
+<status status="PASS" endtime="20150927 15:10:02.234" starttime="20150927 15:10:02.234"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Not Be True">
+<doc>Fails if the given condition is true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.235" starttime="20150927 15:10:02.234"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Valid Prefix Invalid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.235" critical="yes" starttime="20150927 15:10:02.232"></status>
+</test>
+<test id="s1-t6" name="Valid Highway Prefix IH and Invalid Number ABC">
+<kw type="kw" name="BuiltIn.Set Tags">
+<doc>Adds given `tags` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>Valid Prefix Invalid Number</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.236" level="INFO">Set tag 'Valid Prefix Invalid Number'.</msg>
+<status status="PASS" endtime="20150927 15:10:02.237" starttime="20150927 15:10:02.236"></status>
+</kw>
+<kw type="kw" name="${result} = naming.Valid Highway">
+<doc></doc>
+<arguments>
+<arg>IHABC</arg>
+</arguments>
+<msg timestamp="20150927 15:10:02.237" level="INFO">${result} = False</msg>
+<status status="PASS" endtime="20150927 15:10:02.237" starttime="20150927 15:10:02.237"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Not Be True">
+<doc>Fails if the given condition is true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20150927 15:10:02.238" starttime="20150927 15:10:02.237"></status>
+</kw>
+<doc></doc>
+<tags>
+<tag>Valid Prefix Invalid Number</tag>
+</tags>
+<status status="PASS" endtime="20150927 15:10:02.238" critical="yes" starttime="20150927 15:10:02.235"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20150927 15:10:02.239" starttime="20150927 15:10:02.161"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+<stat info="" links="" doc="" combined="" pass="1" fail="0">Invalid Prefix Valid Number</stat>
+<stat info="" links="" doc="" combined="" pass="3" fail="0">Valid Prefix Invalid Number</stat>
+<stat info="" links="" doc="" combined="" pass="2" fail="0">Valid Prefix Valid Number</stat>
+</tag>
+<suite>
+<stat fail="0" pass="6" id="s1" name="Lab4">Lab4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
